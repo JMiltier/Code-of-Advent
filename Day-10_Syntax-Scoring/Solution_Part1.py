@@ -6,7 +6,7 @@ TESTFILE = 'puzzle_input.txt'
 # TESTFILE = 'sample_puzzle.txt'
 
 '''
-Objetives:
+Objectives:
   1. Find and discard the corrupt lines; ignore incomplete.
   2. Score errors.
     ): 3 points
