@@ -1,7 +1,7 @@
 # --- Day 10: Syntax Scoring ---
-## Part 1 `python3 Solution_Part1.py`  
-You ask the submarine to determine the best route out of the deep-sea cave, but it only replies:
-`Syntax error in navigation subsystem on line: all of them`
+## Part 1  
+You ask the submarine to determine the best route out of the deep-sea cave, but it only replies:  
+`Syntax error in navigation subsystem on line: all of them`  
 All of them?! The damage is worse than you thought. You bring up a copy of the navigation subsystem (your puzzle input).  
 
 The navigation subsystem syntax is made of several lines containing chunks. There are one or more chunks on each line, and chunks contain zero or more other chunks. Adjacent chunks are not separated by any delimiter; if one chunk stops, the next chunk (if any) can immediately start. Every chunk must open and close with one of four legal pairs of matching characters:  
@@ -50,9 +50,10 @@ In the above example, an illegal ) was found twice (2*3 = 6 points), an illegal 
 Find the first illegal character in each corrupted line of the navigation subsystem. What is the total syntax error score for those errors?  
 
 Run code against [puzzle input](/puzzle_input.txt) to see what was scored.  
+`python3 Solution_Part1.py`  
 
 
-## Part 2 `python3 Solution_Part2.py`  
+## Part 2  
 Now, discard the corrupted lines. The remaining lines are incomplete.  
 
 Incomplete lines don't have any incorrect characters - instead, they're missing some closing characters at the end of the line. To repair the navigation subsystem, you just need to figure out the sequence of closing characters that complete all open chunks in the line.  
@@ -90,4 +91,5 @@ Autocomplete tools are an odd bunch: the winner is found by sorting all of the s
 
 *Find the completion string for each incomplete line, score the completion strings, and sort the scores. What is the middle score?*  
 
-Run code against [puzzle input](/puzzle_input.txt) to see what was scored.
+Run code against [puzzle input](/puzzle_input.txt) to see what was scored.  
+`python3 Solution_Part2.py`
