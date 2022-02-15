@@ -54,7 +54,7 @@ def main():
             '{': '}',
             '<': '>',}
   scoreTotals = []
-  currupt = False
+  corrupt = False
   currentLine = []
   closers = []
 
@@ -62,8 +62,8 @@ def main():
   with open(TESTFILE, 'r') as input:
     for line in input.read().splitlines():
       # Only accept incomplete lines
-      currentLine, currupt = isCorrupted(line)
-      if not currupt:
+      currentLine, corrupt = isCorrupted(line)
+      if not corrupt:
         while currentLine: # Reverse syntax to close
           closers.append(syntax[currentLine[-1]])
           currentLine.pop()
